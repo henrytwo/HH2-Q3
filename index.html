@@ -15,7 +15,10 @@ my MAILman HOST-Ed mE to a nice dinner. Btw, my favoritE SUBJECT is hax0ring. <b
 <script>
 var problemID = "HEoyx1uqzZI7m7gX9nJ0";
 $(function (){
-	attempt(problemID)
+	if (localStorage.getItem("statSent") === null) {
+            localStorage.setItem('statSent', true);
+			attempt(problemID);
+       }
 })
 </script>
 </body>
